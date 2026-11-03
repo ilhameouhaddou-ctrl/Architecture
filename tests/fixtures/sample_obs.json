@@ -1,0 +1,19 @@
+{
+  "n": 10,
+  "plafond": 20000,
+  "tronque": false,
+  "fenetre": {"debut": "2024-07-01", "fin": "2024-07-05"},
+  "suite": null,
+  "mesures": [
+    {"station_code": "S1", "date": "2024-07-01", "tn": 20.0, "tx": 32.0, "tntxm": 26.0},
+    {"station_code": "S1", "date": "2024-07-02", "tn": 21.0, "tx": 33.5, "tntxm": 27.2},
+    {"station_code": "S1", "date": "2024-07-03", "tn": 22.5, "tx": 34.0, "tntxm": 28.2},
+    {"station_code": "S1", "date": "2024-07-04", "tn": 23.0, "tx": 36.5, "tntxm": 29.7},
+    {"station_code": "S1", "date": "2024-07-05", "tn": 21.0, "tx": 28.0, "tntxm": 24.5},
+    {"station_code": "S2", "date": "2024-01-15", "tn": -6.0, "tx": -1.0, "tntxm": -3.5},
+    {"station_code": "S2", "date": "2024-07-01", "tn": 15.0, "tx": 25.0, "tntxm": 20.0},
+    {"station_code": "S2", "date": "2024-07-02", "tn": 16.0, "tx": 31.0, "tntxm": 23.5},
+    {"station_code": "S2", "date": "2024-07-03", "tn": 15.0, "tx": 29.0, "tntxm": 22.0},
+    {"station_code": "S2", "date": "2024-07-04", "tn": 15.0, "tx": 28.0, "tntxm": 21.5}
+  ]
+}

@@ -1,0 +1,29 @@
+api:
+  base_url: "https://climato.chom.engineering"
+  timeout_seconds: 30
+
+paths:
+  bronze_dir: "data/bronze"
+  silver_dir: "data/silver"
+  gold_dir: "data/gold"
+
+bronze:
+  # Référentiels : un fichier JSON unique.
+  references:
+    - name: stations_ref
+      endpoint: "/ref/stations"
+      params: {}
+      output: "stations_ref.json"
+
+  # Séries : paginées via `suite.from`, un fichier par page dans un sous-dossier.
+  series:
+    - name: dataclimat_quotidienne
+      endpoint: "/dataclimat/quotidienne"
+      params:
+        from: "2023-01-01"
+        to: "2025-01-01"  # from inclus, to exclu -> 2 ans pleins (2023+2024)
+      output_dir: "dataclimat_quotidienne"
+
+# Silver et Gold n'ont pas besoin de config : les fichiers .sql dans
+# src/etl/{silver,gold}/sql/ sont la spécification. Le runner les exécute
+# dans l'ordre alphabétique.
